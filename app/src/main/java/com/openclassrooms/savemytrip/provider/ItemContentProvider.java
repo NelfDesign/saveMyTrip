@@ -59,7 +59,6 @@ public class ItemContentProvider extends ContentProvider {
                 return ContentUris.withAppendedId(uri, id);
             }
         }
-
         throw new IllegalArgumentException("Failed to insert row into " + uri);
     }
 
