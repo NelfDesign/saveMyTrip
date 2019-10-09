@@ -16,7 +16,7 @@ import java.util.concurrent.Executor;
  */
 public class ViewModelFactory implements ViewModelProvider.Factory {
 
-    //fileds viewmodel
+    //fields viewmodel
     private final ItemDataRepository itemDataSource;
     private final UserDataRepository userDataSource;
     private final Executor executor;

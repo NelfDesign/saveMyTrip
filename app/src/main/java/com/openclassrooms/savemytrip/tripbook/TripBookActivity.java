@@ -129,7 +129,9 @@ public class TripBookActivity extends BaseActivity {
     private void readFromStorage(){
         // 3 - CHECK PERMISSION
         if (!EasyPermissions.hasPermissions(this, WRITE_EXTERNAL_STORAGE)) {
-            EasyPermissions.requestPermissions(this, getString(R.string.title_permission), RC_STORAGE_WRITE_PERMS, WRITE_EXTERNAL_STORAGE);
+            EasyPermissions.requestPermissions(this,
+                    getString(R.string.title_permission),
+                    RC_STORAGE_WRITE_PERMS, WRITE_EXTERNAL_STORAGE);
             return;
         }
 

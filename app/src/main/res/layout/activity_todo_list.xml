@@ -38,31 +38,41 @@
         android:layout_above="@id/todo_list_activity_relative_layout_bottom"
         android:layout_below="@id/todo_list_activity_header"/>
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/todo_list_activity_relative_layout_bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_margin="@dimen/default_margin"
         android:layout_above="@id/todo_list_activity_button_add">
+
+        <!-- ImageView icon gallery -->
+        <ImageView
+            android:id="@+id/todo_list_activity_button_gallery"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:src="@drawable/ic_gallery_icon_foreground"
+            android:layout_marginEnd="5dp"/>
 
         <!-- EDIT TEXT  -->
         <EditText
             android:id="@+id/todo_list_activity_edit_text"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="70"
             android:textSize="@dimen/default_text_size"
-            android:hint="@string/todolist_things_todo"
-            android:layout_toLeftOf="@id/todo_list_activity_spinner"/>
+            android:hint="@string/todolist_things_todo" />
 
         <!-- SPINNER  -->
         <Spinner
             android:id="@+id/todo_list_activity_spinner"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_weight="20"
             android:textSize="@dimen/default_text_size"/>
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <!-- BUTTON TODOLIST -->
     <Button
